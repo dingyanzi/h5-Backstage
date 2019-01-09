@@ -1,0 +1,139 @@
+/* ============================================================
+   样式重置 
+   ============================================================ */
+*{box-sizing:border-box;}
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:300;}
+ul,dl,ol{list-style:none;}
+img,fieldset,input[type="submit"]{border:0 none;}
+img{display:inline-block;overflow:hidden;vertical-align:top;}
+em{font-style:normal;}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input{cursor:pointer;border:0 none;-webkit-appearance: none;appearance:none;}
+textarea{word-wrap:break-word;resize:none;}  /* word-wrap for opera, resize for webkit */
+menu{margin:0;padding:0;}
+body{background-color:#f3f8fc;-webkit-user-select:none;-webkit-text-size-adjust:none!important;font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}
+input[type="number"]{-webkit-user-select:text;}
+a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+input,select,textarea{outline:none;}
+/* 去除android4.0以下 a/button/input标签被点击时产生的边框 因为边框引起了不少bug */
+a,button,input,select,li,i{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+/* Android4.0下不识别选择器-webkit-transform-3d 使用它可做Android4.0下版本兼容 */
+@media all and (-webkit-transform-3d){
+/* android4.0+ ios4+ 恢复按钮被点击时产生的效果 */
+/*a,button,input{-webkit-tap-highlight-color:rgba(130,130,130,.52);}*/
+a,button,input,select{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+} 
+a,p{text-decoration:none;cursor:pointer;}
+body,html,.layui-body{
+	overflow-y: hidden !important;
+	font-size:”Microsoft YaHei”;
+} 
+.lt{float: left;}
+.rt{float: right;}
+.cl {
+	clear: both
+}
+
+.cc:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.cc {
+	display: inline-block;
+	zoom: 1;
+}
+
+.transition{
+	 transition: all 0.2s ease-in;
+	 -webkit-transition: all 0.2s ease-in;
+	 -moz-transition: all 0.2s ease-in;
+	 -o-transition: all 0.2s ease-in;
+}
+.txtL {
+	text-align: left;
+}
+
+.txtC {
+	text-align: center;
+}
+
+.txtR {
+	text-align: right;
+}
+
+.blod {
+	font-weight: bold;
+}
+
+.txtD {
+	text-decoration: underline;
+}
+
+.itic {
+	font-style: italic;
+}
+.infinite{
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-ms-animation-iteration-count:infinite;
+	-o-animation-iteration-count:infinite;
+	wbekit-animation-iteration-count:infinite;
+	
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #999;
+	font-size: 16px;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #666;
+	font-size: 16px;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #666;
+	font-size: 16px;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #666;
+	font-size: 16px;
+}
+/*弹性盒子*/
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} 
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;} 
+.flex-1{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;width: 0%;} 
+.flex-align-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;} 
+.flex-pack-center{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;} 
+.flex-pack-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}
+
+.hor-view{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;flex-direction:row}
+.ver-view{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column}
+.clearfix:after,.clearfix:before {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { *zoom: 1; }
+::-moz-placeholder { color: #cecece; font-size:0.56rem;}
+::-webkit-input-placeholder { color:#cecece;  font-size: 0.56rem;}
+:-ms-input-placeholder { color:#cecece;  font-size: 0.56rem;}
+
+html{font-size:50px}
+@media screen and (min-width:320px){html{font-size:21.33px}}
+@media screen and (min-width:360px){html{font-size:24px}}
+@media screen and (min-width:375px){html{font-size:25px}}
+@media screen and (min-width:384px){html{font-size:25.6px}}
+@media screen and (min-width:400px){html{font-size:27px}}
+@media screen and (min-width:414px){html{font-size:27px}}
+@media screen and (min-width:424px){html{font-size:28.27px}}
+@media screen and (min-width:480px){html{font-size:32px}}
+@media screen and (min-width:540px){html{font-size:36px}}
+@media screen and (min-width:720px){html{font-size:48px}}
+@media screen and (min-width:750px){html{font-size:50px}}
